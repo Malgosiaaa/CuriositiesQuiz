@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CiekawostQuiz</string>
+    <string name="name_header">Poniżej wpisz swoje imię:</string>
+    <string name="name">Imię</string>
+    <string name="first_question">Ile razy Międzynarodowa Stacja Kosmiczna musiała zmienić kurs żeby uniknąć kolizji z kosmicznymi śmieciami w 2014 r.?</string>
+    <string name="first_answer_in_first_question">3 razy</string>
+    <string name="second_answer_in_first_question">nigdy się to nie zdarzyło</string>
+    <string name="third_answer_in_first_question">16 razy</string>
+    <string name="fourth_answer_in_first_question">nie ma czegoś takiego jak kosmiczne śmieci</string>
+    <string name="second_question">Czy albinizm zdarza się u owadów?</string>
+    <string name="first_answer_in_second_question">był powszechny, ale tylko w Paleozoiku</string>
+    <string name="second_answer_in_second_question">zdarza się to dzisiaj</string>
+    <string name="third_answer_in_second_question">to niemożliwe w związku z DNA owadów</string>
+    <string name="fourth_answer_in_second_question">zdarza się to tylko jako efekt uboczny stosowania pestycydów w rolnictwie</string>
+    <string name="third_question">Ile razy Ziemia zmieściłaby się w objętości Słońca?</string>
+    <string name="first_answer_in_third_question">1 raz</string>
+    <string name="second_answer_in_third_question">13 tysięcy razy</string>
+    <string name="third_answer_in_third_question">50 tysięcy razy</string>
+    <string name="fourth_answer_in_third_question">około 1,3 miliona razy</string>
+    <string name="fourth_question">Które umiejętności zostały opanowane przez szympansy?</string>
+    <string name="clarification_to_fourth_question">(więcej niż 1 odpowiedź może być prawdziwa)</string>
+    <string name="first_answer_in_fourth_question">używają języka migowego</string>
+    <string name="second_answer_in_fourth_question">"niektóre z nich od czsu do czasu robią ciasto jagodowe "</string>
+    <string name="third_answer_in_fourth_question">radzą sobie z obsługą iPad\'a</string>
+    <string name="fourth_answer_in_fourth_question">lubią jeździć na rolkach</string>
+    <string name="fifth_question">Jaki zawód widniał na wizytówce Al\'a Copone?</string>
+    <string name="first_answer_in_fifth_question">dziennikarz</string>
+    <string name="second_answer_in_fifth_question">rzeźnik</string>
+    <string name="third_answer_in_fifth_question">sprzedawca używanych mebli</string>
+    <string name="fourth_answer_in_fifth_question">biznesmen</string>
+    <string name="sixth_question">"Jaki kraj jest domem dla około dwóch trzecich wszystkich niedźwiedzi polarnych? "</string>
+    <string name="hint_sixth_question">No jaki?</string>
+    <string name="sixth_answer">Kanada</string>
+    <string name="get_score">Mój wynik</string>
+    <string name="reset">Spróbuj jeszcze raz</string>
+    <string name="see_answers">Odpowiedzi</string>
+    <string name="thanks">" dziękujemy za udział w quizie!"</string>
+    <string name="earned">"Twój wynik to: "</string>
+    <string name="points">" na 6 możliwych punktów"</string>
+    <string name="try_again">Spróbuj jeszcze raz!</string>
+    <string name="good_job">Dobra robota!</string>
+    <string name="quiz_master">Jesteś mistrzem!</string>
+</resources>

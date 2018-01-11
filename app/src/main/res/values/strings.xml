@@ -1,0 +1,125 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Curiosities Quiz</string>
+
+    <!-- User's name header [CHAR LIMIT=20] -->
+    <string name="name_header">Please enter your name below:</string>
+
+    <!-- Hint for user's name [CHAR LIMIT=20] -->
+    <string name="name">Name</string>
+
+    <!-- First question [CHAR LIMIT=120] -->
+    <string name="first_question">How many times International Space Station was forced to change its course to avoid collision with cosmic garbage in 2014?</string>
+
+    <!-- first answer in first question [CHAR LIMIT=20] -->
+    <string name="first_answer_in_first_question">3 times</string>
+
+    <!-- second answer in first question [CHAR LIMIT=20] -->
+    <string name="second_answer_in_first_question">it never happen</string>
+
+    <!-- third answer in first question [CHAR LIMIT=20] -->
+    <string name="third_answer_in_first_question">16 times</string>
+
+    <!-- fourth answer in first question [CHAR LIMIT=50] -->
+    <string name="fourth_answer_in_first_question">there is no such thing like cosmic garbage</string>
+
+    <!-- Second question [CHAR LIMIT=50] -->
+    <string name="second_question">Does albinism occur among insects?</string>
+
+    <!-- first answer in second question [CHAR LIMIT=50] -->
+    <string name="first_answer_in_second_question">it was common only in Paleozoic</string>
+
+    <!-- second answer in second question [CHAR LIMIT=50] -->
+    <string name="second_answer_in_second_question">it occurs nowadays</string>
+
+    <!-- third answer in second question [CHAR LIMIT=50] -->
+    <string name="third_answer_in_second_question">it is impossible according to insect’s DNA </string>
+
+    <!-- fourth answer in second question [CHAR LIMIT=70] -->
+    <string name="fourth_answer_in_second_question">it occurs only as the side effect of pesticide usage in agriculture</string>
+
+    <!-- Third question [CHAR LIMIT=70] -->
+    <string name="third_question">How many times Earth would fit into the Sun’s volume?</string>
+
+    <!-- first answer in third question [CHAR LIMIT=10] -->
+    <string name="first_answer_in_third_question">1 time</string>
+
+    <!-- second answer in third question [CHAR LIMIT=20] -->
+    <string name="second_answer_in_third_question">13 thousand times</string>
+
+    <!-- third answer in third question [CHAR LIMIT=20] -->
+    <string name="third_answer_in_third_question">50 thousand times</string>
+
+    <!-- fourth answer in third question [CHAR LIMIT=20] -->
+    <string name="fourth_answer_in_third_question">around 1,3 MLN times</string>
+
+    <!-- Fourth question [CHAR LIMIT=50] -->
+    <string name="fourth_question">Which skills have been obtained by chimpanzees? </string>
+
+    <!-- Clarification to fourth question [CHAR LIMIT=50] -->
+    <string name="clarification_to_fourth_question">(more than 1 answer might be possible)</string>
+
+    <!-- first answer in fourth question [CHAR LIMIT=30] -->
+    <string name="first_answer_in_fourth_question">they use sign language</string>
+
+    <!-- second answer in fourth question [CHAR LIMIT=120] -->
+    <string name="second_answer_in_fourth_question">some of them make blueberry pie from time to time</string>
+
+    <!-- third answer in fourth question [CHAR LIMIT=20] -->
+    <string name="third_answer_in_fourth_question">they can handle with iPad</string>
+
+    <!-- fourth answer in fourth question [CHAR LIMIT=20] -->
+    <string name="fourth_answer_in_fourth_question">they like roller skating</string>
+
+    <!-- fifth question [CHAR LIMIT=120] -->
+    <string name="fifth_question">What kind of occupation was printed on Al Capone’s card?</string>
+
+    <!-- first answer in fifth question [CHAR LIMIT=20] -->
+    <string name="first_answer_in_fifth_question">journalist</string>
+
+    <!-- second answer in fifth question [CHAR LIMIT=20] -->
+    <string name="second_answer_in_fifth_question">butcher</string>
+
+    <!-- third answer in fifth question [CHAR LIMIT=50] -->
+    <string name="third_answer_in_fifth_question">used furniture dealer</string>
+
+    <!-- fourth answer in fifth question [CHAR LIMIT=20] -->
+    <string name="fourth_answer_in_fifth_question">businessman</string>
+
+    <!-- sixth question [CHAR LIMIT=120] -->
+    <string name="sixth_question">Which country is a home for around two thirds of all polar bears? </string>
+
+    <!-- hint for the sixth question [CHAR LIMIT=20] -->
+    <string name="hint_sixth_question">Which one?</string>
+
+    <!-- answer in sixth question [CHAR LIMIT=10] -->
+    <string name="sixth_answer">Canada</string>
+
+    <!-- text for get score button [CHAR LIMIT=20] -->
+    <string name="get_score">Get my score</string>
+
+    <!-- text for reset button [CHAR LIMIT=20] -->
+    <string name="reset">Try again</string>
+
+    <!-- text for see correct answers button [CHAR LIMIT=20] -->
+    <string name="see_answers">See answers</string>
+
+    <!-- score message - thanks for resolving quiz [CHAR LIMIT=50] -->
+    <string name="thanks">" "thank you for resolving quiz!</string>
+
+    <!-- score message - you earned [CHAR LIMIT=20] -->
+    <string name="earned">Your score is:" "</string>
+
+    <!-- score message - points [CHAR LIMIT=20] -->
+    <string name="points">" "on 6 possible points</string>
+
+    <!-- score message - low score [CHAR LIMIT=20] -->
+    <string name="try_again">Try again!</string>
+
+    <!-- score message - medium score [CHAR LIMIT=20] -->
+    <string name="good_job">Good job!</string>
+
+    <!-- score message - high score [CHAR LIMIT=20] -->
+    <string name="quiz_master">You are a quiz master!</string>
+
+</resources>
