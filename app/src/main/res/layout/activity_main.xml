@@ -97,7 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/fourth_answer_in_first_question"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/regular_text_size" />
             </RadioGroup>
 
         </LinearLayout>
