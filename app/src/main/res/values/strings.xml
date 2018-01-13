@@ -95,6 +95,15 @@
     <!-- answer in sixth question [CHAR LIMIT=10] -->
     <string name="sixth_answer">Canada</string>
 
+    <!-- answer in sixth question - lowercase [CHAR LIMIT=10] -->
+    <string name="sixth_answer_low">canada</string>
+
+    <!-- answer in sixth question - PL [CHAR LIMIT=10] -->
+    <string name="sixth_answer_pl">Kanada</string>
+
+    <!-- answer in sixth question - lowercase -PL [CHAR LIMIT=10] -->
+    <string name="sixth_answer_pl_low">kanada</string>
+
     <!-- text for get score button [CHAR LIMIT=20] -->
     <string name="get_score">Get my score</string>
 

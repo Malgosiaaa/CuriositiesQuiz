@@ -10,12 +10,50 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    // declaration of all global variables
     int score = 0;
+
+    EditText userName;
+
+    RadioButton first_button_in_first_question;
+    RadioButton second_answer_in_second_question;
+    RadioButton fourth_answer_in_third_question;
+    CheckBox first_answer_in_fourth_question;
+    CheckBox second_answer_in_fourth_question;
+    CheckBox third_answer_in_fourth_question;
+    CheckBox fourth_answer_in_fourth_question;
+    RadioButton third_answer_in_fifth_question;
+    EditText sixthQuestion;
+
+    RadioGroup radioGroup1;
+    RadioGroup radioGroup2;
+    RadioGroup radioGroup3;
+    RadioGroup radioGroup4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //initialization of edit text with user's name
+        userName = findViewById(R.id.user_name);
+
+        //initialization of all answers
+        first_button_in_first_question = findViewById(R.id.first_button_in_first_question);
+        second_answer_in_second_question = findViewById(R.id.second_answer_in_second_question);
+        fourth_answer_in_third_question = findViewById(R.id.fourth_answer_in_third_question);
+        first_answer_in_fourth_question = findViewById(R.id.first_answer_in_fourth_question);
+        second_answer_in_fourth_question = findViewById(R.id.second_answer_in_fourth_question);
+        third_answer_in_fourth_question = findViewById(R.id.third_answer_in_fourth_question);
+        fourth_answer_in_fourth_question = findViewById(R.id.fourth_answer_in_fourth_question);
+        third_answer_in_fifth_question = findViewById(R.id.third_answer_in_fifth_question);
+        sixthQuestion = findViewById(R.id.sixth_question);
+
+        //initialization of Radio Groups needed in "reset" method
+        radioGroup1 = findViewById(R.id.first_radio_group);
+        radioGroup2 = findViewById(R.id.second_radio_group);
+        radioGroup3 = findViewById(R.id.third_radio_group);
+        radioGroup4 = findViewById(R.id.fourth_radio_group);
     }
 
     /**
@@ -23,8 +61,7 @@ public class MainActivity extends AppCompatActivity {
      */
 
     public void getScore (View view) {
-        //finds user's name
-        EditText userName = findViewById(R.id.user_name);
+        //gets user's name to String
         String name = userName.getText().toString();
 
         //creates score message
@@ -45,57 +82,47 @@ public class MainActivity extends AppCompatActivity {
     /**
  * This method checks if answers are correct and calculates the user's score
  */
-    private int calculateScore(int score) {
+    public int calculateScore(int score) {
 
         //First question - correct is first answer
-        RadioButton first_button_in_first_question = findViewById(R.id.first_button_in_first_question);
         boolean firstQuestion = first_button_in_first_question.isChecked();
         if (firstQuestion == true) {
             score += 1;
         }
 
         //Second question - correct is second answer
-        RadioButton second_answer_in_second_question = findViewById(R.id.second_answer_in_second_question);
         boolean secondQuestion = second_answer_in_second_question.isChecked();
         if (secondQuestion == true) {
             score += 1;
         }
 
         //Third question - correct is fourth answer
-        RadioButton fourth_answer_in_third_question = findViewById(R.id.fourth_answer_in_third_question);
         boolean thirdQuestion = fourth_answer_in_third_question.isChecked();
         if (thirdQuestion == true) {
             score += 1;
         }
 
         //Fourth question - correct are first and third answers
-        CheckBox first_answer_in_fourth_question = findViewById(R.id.first_answer_in_fourth_question);
         boolean fourthQuestionA1 = first_answer_in_fourth_question.isChecked();
-
-        CheckBox second_answer_in_fourth_question = findViewById(R.id.second_answer_in_fourth_question);
         boolean fourthQuestionA2 = second_answer_in_fourth_question.isChecked();
-
-        CheckBox third_answer_in_fourth_question = findViewById(R.id.third_answer_in_fourth_question);
         boolean fourthQuestionA3 = third_answer_in_fourth_question.isChecked();
-
-        CheckBox fourth_answer_in_fourth_question = findViewById(R.id.fourth_answer_in_fourth_question);
         boolean fourthQuestionA4 = fourth_answer_in_fourth_question.isChecked();
-
         if (fourthQuestionA1 && !fourthQuestionA2 && fourthQuestionA3 && !fourthQuestionA4) {
             score += 1;
         }
 
         //Fifth question - correct is third answer
-        RadioButton third_answer_in_fifth_question = findViewById(R.id.third_answer_in_fifth_question);
         boolean fifthQuestion = third_answer_in_fifth_question.isChecked();
         if (fifthQuestion == true) {
             score += 1;
         }
 
         //Sixth question - right answer is: Canada
-        EditText sixthQuestion = findViewById(R.id.sixth_question);
-        String sixtQuestionAnswer = sixthQuestion.getText().toString();
-        if (sixtQuestionAnswer.equals("canada") || sixtQuestionAnswer.equals("Canada") || sixtQuestionAnswer.equals("Kanada") || sixtQuestionAnswer.equals("kanada")) {
+        String sixthQuestionAnswer = sixthQuestion.getText().toString();
+        if (sixthQuestionAnswer.equals(getString(R.string.sixth_answer_low))
+                || sixthQuestionAnswer.equals(getString(R.string.sixth_answer))
+                || sixthQuestionAnswer.equals(getString(R.string.sixth_answer_pl))
+                || sixthQuestionAnswer.equals(R.string.sixth_answer_pl_low)) {
             score += 1;
         }
 
@@ -104,32 +131,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void reset (View view) {
         //resets all given answers
-        RadioGroup radioGroup1 = findViewById(R.id.first_radio_group);
         radioGroup1.clearCheck();
-
-        RadioGroup radioGroup2 = findViewById(R.id.second_radio_group);
         radioGroup2.clearCheck();
-
-        RadioGroup radioGroup3 = findViewById(R.id.third_radio_group);
         radioGroup3.clearCheck();
-
-        CheckBox checkBox1 = findViewById(R.id.first_answer_in_fourth_question);
-        checkBox1.setChecked(false);
-
-        CheckBox checkBox2 = findViewById(R.id.second_answer_in_fourth_question);
-        checkBox2.setChecked(false);
-
-        CheckBox checkBox3 = findViewById(R.id.third_answer_in_fourth_question);
-        checkBox3.setChecked(false);
-
-        CheckBox checkBox4 = findViewById(R.id.fourth_answer_in_fourth_question);
-        checkBox4.setChecked(false);
-
-        RadioGroup radioGroup4 = findViewById(R.id.fourth_radio_group);
+        first_answer_in_fourth_question.setChecked(false);
+        second_answer_in_fourth_question.setChecked(false);
+        third_answer_in_fourth_question.setChecked(false);
+        fourth_answer_in_fourth_question.setChecked(false);
         radioGroup4.clearCheck();
-
-        EditText sixthAnswer = findViewById(R.id.sixth_question);
-        sixthAnswer.setText("");
+        sixthQuestion.setText("");
 
         score = 0;
     }

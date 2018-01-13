@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_marginLeft">5dp</dimen>
+    <dimen name="layout_marginRight">5dp</dimen>
+    <dimen name="layout_marginTop">5dp</dimen>
+    <dimen name="layout_marginBottom">5dp</dimen>
+    <dimen name="regular_padding">10dp</dimen>
+    <dimen name="regular_text_size">16sp</dimen>
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="checkbox_layout_marginStart">10dp</dimen>
+    <dimen name="checkbox_layout_marginLeft">10dp</dimen>
+    <dimen name="button_MarginRight">16dp</dimen>
+    <dimen name="button_small_MarginRight">10dp</dimen>
+    <dimen name="button_marginLeft">16dp</dimen>
+    <dimen name="button_marginBottom">24dp</dimen>
+
+</resources>
